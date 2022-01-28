@@ -28,7 +28,7 @@
 
 		@include breakpoint('<=xlarge') {
 			> .inner {
-				@include padding(0, 4em);
+				@include padding(0, 5em);
 
 				> section {
 					@include padding(5em, 0);
@@ -36,32 +36,12 @@
 			}
 		}
 
-		@include breakpoint('<=large') {
-			> .inner {
-				@include padding(0, 3em);
-
-				> section {
-					@include padding(4em, 0);
-				}
-			}
-		}
-
 		@include breakpoint('<=medium') {
 			> .inner {
-				@include padding(0, 2em);
+				@include padding(0, 4em);
 
 				> section {
 					@include padding(3em, 0);
-				}
-			}
-		}
-
-		@include breakpoint('<=small') {
-			> .inner {
-				@include padding(0, 1em);
-
-				> section {
-					@include padding(2em, 0);
 				}
 			}
 		}

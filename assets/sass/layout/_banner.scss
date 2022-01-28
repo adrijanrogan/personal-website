@@ -10,10 +10,6 @@
 		@include padding(6em, 0);
 		@include vendor('display', 'flex');
 
-		h1 {
-			margin-top: -0.125em;
-		}
-
 		.content {
 			@include vendor('flex-grow', '1');
 			@include vendor('flex-shrink', '1');
