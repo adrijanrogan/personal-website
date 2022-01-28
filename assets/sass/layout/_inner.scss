@@ -1,0 +1,43 @@
+// Inner content, with max width
+
+#inner {
+    @include padding(0, 5em);
+    @include vendor('display', 'flex');
+    flex-direction: column;
+    flex: 1;
+    margin   : 0 auto;
+    max-width: 80em;
+
+    >section {
+        @include padding(6em, 0);
+        border-top: solid 2px _palette(border);
+
+        &:first-of-type {
+            border-top: 0 !important;
+        }
+    }
+
+    @include breakpoint('<=xlarge') {
+        @include padding(0, 4em);
+
+        >section {
+            @include padding(5em, 0);
+        }
+    }
+
+    @include breakpoint('<=large') {
+        @include padding(0, 3em);
+    }
+
+    @include breakpoint('<=medium') {
+        @include padding(0, 2em);
+
+        >section {
+            @include padding(4em, 0);
+        }
+    }
+
+    @include breakpoint('<=small') {
+        @include padding(0, 1.5em);
+    }
+}

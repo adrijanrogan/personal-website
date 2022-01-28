@@ -19,3 +19,19 @@ Site templates from HTML5 UP are [licensed](https://html5up.net/license) under t
 ## Design
 
 The website is based on the Editorial template from HTML5 UP, with colour, typography, navigation and layout tweaks.
+
+## Document structure
+
+Documents should adhere to the following structure for the body:
+
+```
+<body>
+|
+└─ <nav> for navigation menu
+│ 
+└─ <div id="main"> for main content
+   │
+   └─ <div class="inner"> for inner content (whitespace)
+```
+
+Use `<div class="article">` for further insetting article/post content.
