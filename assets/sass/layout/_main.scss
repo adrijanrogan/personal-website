@@ -51,10 +51,4 @@
 				}
 			}
 		}
-
-		@include breakpoint('<=small') {
-			> .inner {
-				@include padding(0, 1em);
-			}
-		}
 	}

@@ -2470,11 +2470,6 @@ button:disabled,
     padding: 4em 0 2em 0;
   }
 }
-@media screen and (max-width: 736px) {
-  #main > .inner {
-    padding: 0 1em 0.1em 1em;
-  }
-}
 
 /* Header */
 #header {
