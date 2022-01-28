@@ -24,29 +24,17 @@ window.addEventListener("resize", function() {
 
 // Fix for object fit images
 if (!browser.canUse('object-fit') || browser.name == 'safari') {
-	document.querySelectorAll(".image.object").forEach(e => {
-		// TODO
+	document.querySelectorAll(".image.object").forEach(imgObj => {
+		imgObj.querySelectorAll("img").forEach(img => {
+			// Hide original image
+			img.style.opacity = 0;
+			// Set background
+			imgObj.style.backgroundImage = 'url("' + img.getAttribute('src') + '")';
+			imgObj.style.backgroundSize = img.style.objectFit ? img.style.objectFit : 'cover';
+			imgObj.style.backgroundPosition = img.style.objectPosition ? img.style.objectPosition : 'center';
+		});
 	});
 }
-
-/* // Object fit images.
-if (!browser.canUse('object-fit')
-||	browser.name == 'safari')
-	$('.image.object').each(function() {
-
-		var $this = $(this),
-			$img = $this.children('img');
-
-		// Hide original image.
-			$img.css('opacity', '0');
-
-		// Set background.
-			$this
-				.css('background-image', 'url("' + $img.attr('src') + '")')
-				.css('background-size', $img.css('object-fit') ? $img.css('object-fit') : 'cover')
-				.css('background-position', $img.css('object-position') ? $img.css('object-position') : 'center');
-
-	}); */
 
 // Handle menu
 const menu = document.querySelector("#menu");
