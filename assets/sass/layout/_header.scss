@@ -16,10 +16,22 @@
 		row-gap: 1em;
 		column-gap: 1em;
 		padding: 3em 0 1em 0;
-		position: relative;
 
 		> * {
 			margin-bottom: 0;
+		}
+
+		.menu {
+			margin-left: 1em;
+			display: inline-flex;
+		}
+
+		.menu > * {
+			margin-bottom: 0;
+		}
+
+		.menu > :first-child {
+			margin-right: 1em;
 		}
 
 		.icons {
@@ -32,5 +44,13 @@
 
 		@include breakpoint('<=medium') {
 			padding-top: 1em;
+
+			.menu {
+				margin-left: 0;
+			}
+
+			.icons {
+				margin-right: 0;
+			}
 		}
 	}

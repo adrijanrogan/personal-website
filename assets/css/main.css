@@ -2495,10 +2495,19 @@ button:disabled,
   row-gap: 1em;
   column-gap: 1em;
   padding: 3em 0 1em 0;
-  position: relative;
 }
 #header > * {
   margin-bottom: 0;
+}
+#header .menu {
+  margin-left: 1em;
+  display: inline-flex;
+}
+#header .menu > * {
+  margin-bottom: 0;
+}
+#header .menu > :first-child {
+  margin-right: 1em;
 }
 #header .icons {
   margin-right: 1em;
@@ -2511,6 +2520,12 @@ button:disabled,
 @media screen and (max-width: 980px) {
   #header {
     padding-top: 1em;
+  }
+  #header .menu {
+    margin-left: 0;
+  }
+  #header .icons {
+    margin-right: 0;
   }
 }
 
@@ -2614,17 +2629,7 @@ button:disabled,
 }
 
 /* Menu toggle */
-#menu-toggle-container {
-  display: inline-flex;
-}
-
-#menu-toggle-container > * {
-  margin-bottom: 0;
-}
-
 #menu-toggle {
-  margin-left: 1em;
-  margin-right: 1em;
   display: flex;
   cursor: pointer;
   flex-direction: column;
