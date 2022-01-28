@@ -35,3 +35,7 @@ Documents should adhere to the following structure for the body:
 ```
 
 Use `<section class="article">` for further insetting article/post content.
+
+## Photos
+
+- `post_01.jpg` by Miguel Á. Padriñán from [pexels](https://www.pexels.com/photo/four-letter-tiles-1591061/)
