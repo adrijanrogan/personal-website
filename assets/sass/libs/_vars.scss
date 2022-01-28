@@ -21,9 +21,9 @@
 
 // Font.
 	$font: (
-		family:				('Open Sans', sans-serif),
+		family-body:		('Libre Baskerville', serif),
 		family-heading:		('Roboto Slab', serif),
-		family-fixed:		('Courier New', monospace),
+		family-mono:		('Courier New', monospace),
 		weight:				400,
 		weight-bold:		600,
 		weight-heading:		700,
@@ -35,10 +35,10 @@
 	$palette: (
 		bg:					#ffffff,
 		bg-alt:				#f5f6f7,
-		fg:					#7f888f,
+		fg:					#676f75,
 		fg-bold:			#3d4449,
 		fg-light:			#9fa3a6,
 		border:				rgba(210,215,217,0.75),
 		border-bg:			transparentize(#e6ebed, 0.75),
-		accent:				#f56a6a
+		accent:				#204899
 	);

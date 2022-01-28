@@ -1,0 +1,76 @@
+/* Menu toggle */
+
+    #menu-toggle-container {
+        display: inline-flex;
+    }
+    
+    #menu-toggle-container>* {
+        margin-bottom: 0;
+    }
+    
+    #menu-toggle {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        z-index: 1;
+        -webkit-user-select: none;
+    }
+    
+    /* A quick hamburger */
+    #menu-toggle span {
+        display: block;
+        width: 2em;
+        height: 3px;
+        display: block;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        background: #3d4449;
+        opacity: 0.9;
+        border-radius: 4px;
+        z-index: 1;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+
+    @media screen and (max-width: 736px) {
+        #menu-toggle span {
+        width: 1.5em;
+        height: 2px;
+        }
+    }
+
+    /* Transform to crossmark by translating, rotating and scaling the first and third span */
+    /* Hide the second one */
+    body.menu-open #menu-toggle span:nth-child(1) {
+        opacity: 1;
+        background: white;
+        transform: translate(0, 7px) rotate(+45deg) scale(1.2, 1.2);
+    }
+    
+    @media screen and (max-width: 736px) {
+        body.menu-open #menu-toggle span:nth-child(1) {
+        transform: translate(0, 6px) rotate(+45deg) scale(1.2, 1.2);
+        }
+    }
+    
+    body.menu-open #menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    body.menu-open #menu-toggle span:nth-child(3) {
+        opacity: 1;
+        background: white;
+        transform: translate(0, -7px) rotate(-45deg) scale(1.2, 1.2);
+    }
+    
+    @media screen and (max-width: 736px) {
+        body.menu-open #menu-toggle span:nth-child(3) {
+        transform: translate(0, -6px) rotate(-45deg) scale(1.2, 1.2);
+        }
+    }

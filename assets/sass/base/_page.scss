@@ -13,6 +13,8 @@
 
 	// MSIE: Prevents scrollbar from overlapping content.
 		body {
+			// "Fix" for content jump when scrollbar disappears (menu open)
+			width: 99vw;
 			-ms-overflow-style: scrollbar;
 		}
 
