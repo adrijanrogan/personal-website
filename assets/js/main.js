@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
 	window.setTimeout(() => body.classList.remove("is-preload"), 100);
 })
 
-// Stop animations/transitions until the page has stopped resizing
+/* // Stop animations/transitions until the page has stopped resizing
 var resizeTimeout;
 
 window.addEventListener("resize", function() {
@@ -20,7 +20,7 @@ window.addEventListener("resize", function() {
 	clearTimeout(resizeTimeout);
 
 	resizeTimeout =  setTimeout(() => body.classList.remove("is-resizing"), 100);
-})
+}) */
 
 // Fix for object fit images
 if (!browser.canUse('object-fit') || browser.name == 'safari') {
