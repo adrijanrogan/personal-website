@@ -31,7 +31,7 @@ Documents should adhere to the following structure for the body:
 │ 
 └─ <div id="main"> for main content
    │
-   └─ <div class="inner"> for inner content (whitespace)
+   └─ <div id="inner"> for inner content (whitespace)
 ```
 
-Use `<div class="article">` for further insetting article/post content.
+Use `<section class="article">` for further insetting article/post content.
