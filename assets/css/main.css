@@ -2602,6 +2602,9 @@ button:disabled,
 }
 
 /* Footer */
+#footer {
+  margin-top: auto;
+}
 #footer .copyright {
   color: #9fa3a6;
   font-size: 0.9em;
