@@ -1,5 +1,5 @@
 @import 'fontawesome-all.min.css';
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@400;700&display=swap");
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1393,7 +1393,7 @@ header p {
   font-family: "Roboto Slab", serif;
   font-size: 1em;
   font-weight: 400;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   margin-top: -0.5em;
   text-transform: uppercase;
 }
@@ -2007,7 +2007,7 @@ button,
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   line-height: 3.5em;
   padding: 0 2.25em;
   text-align: center;
