@@ -2571,6 +2571,9 @@ button:disabled,
   object-position: center;
   width: 100%;
 }
+#banner h1 {
+  letter-spacing: 0.025em;
+}
 @media screen and (orientation: portrait) {
   #banner {
     -moz-flex-direction: column-reverse;

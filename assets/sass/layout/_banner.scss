@@ -37,6 +37,10 @@
 			}
 		}
 
+		h1 {
+			letter-spacing: calc(_font(kerning-heading) /2);
+		}
+
 		@include orientation(portrait) {
 			@include vendor('flex-direction', 'column-reverse');
 
